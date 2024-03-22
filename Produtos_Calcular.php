@@ -12,19 +12,18 @@
     echo "<hr size='10' color='red'>";
     //Recupera os valores informados nas caixas de textos e armazena nas variaveis,nas linhas abaixo
     $num1 =$_POST["Código"];
+    echo "Código: "  . $num1;
     $num2 =$_POST["Descrição"];
-    $num3 =$POST["Marca"];
-    $num4 =$POST["Preço Unit"];
-    $num5 =$POST["Quantidade"];
-    $soma = $num4 + $num5;
-
-    echo "Código: "  .$num1;
-    echo "<br>Descrição: "  .$num2;
-    echo "<br>Marca: "  .$num3;
-    echo "<br>Preço: "  .$num4;
-    echo "<br>Quantidade: "  .$num5;
+    echo "<br>Descrição: "  . $num2;
+    $num3 =$_POST["Marca"];
+    echo "<br>Marca: "  . $num3;
+    $num4 =$_POST["Preço Unit"];
+    echo "<br>Preço: "  . $num4;
+    $num5 =$_POST["Quantidade"];
+    echo "<br>Quantidade: "  . $num5;
+    $total = $num4 * $num5;
     echo "<hr size='8' color='blue' align'left' width='185'>";
-    echo "<br> Total: "  .$soma;
+    echo "<br> Total: "  . $total;
 
     ?>
 </body>
